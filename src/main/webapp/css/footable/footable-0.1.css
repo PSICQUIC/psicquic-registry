@@ -27,7 +27,7 @@
 }
 
 .footable > tbody > tr:hover {
-  background: #fffcf6;
+  background: #e6eddb;
 }
 
 .footable.breakpoint > tbody > tr:hover:not(.footable-row-detail) {
