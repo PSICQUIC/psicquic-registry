@@ -426,10 +426,10 @@
 
     <service>
         <name>BAR</name>
-        <soapUrl>http://bar.utoronto.ca:9090/psicquic/webservices/psicquic</soapUrl>
-        <restUrl>http://bar.utoronto.ca:9090/psicquic/webservices/current/search/</restUrl>
-        <restExample>http://bar.utoronto.ca:9090/psicquic/webservices/current/search/query/*?firstResult=0&amp;maxResults=10</restExample>
-        <organizationUrl>http://bar.utoronto.ca</organizationUrl>
+        <soapUrl>https://bar.utoronto.ca/psicquic/webservices/psicquic</soapUrl>
+        <restUrl>https://bar.utoronto.ca/psicquic/webservices/current/search/</restUrl>
+        <restExample>https://bar.utoronto.ca/psicquic/webservices/current/search/query/*?firstResult=0&amp;maxResults=10</restExample>
+        <organizationUrl>https://bar.utoronto.ca</organizationUrl>
         <description></description>
         <restricted>false</restricted>
         <tag>MI:1047</tag> <!-- protein-protein-->
