@@ -15,7 +15,7 @@ RUN addgroup --gid "$GID" "$USER" \
   --uid "$UID" \
   "$USER"
 
-ADD /target/psicquic-registry.war "/usr/local/tomcat/webapps/Tools#webservices#psicquic#registry
+ADD /target/psicquic-registry.war "/usr/local/tomcat/webapps/Tools#webservices#psicquic#registry.war"
 RUN cp -r webapps.dist/ROOT webapps/
 RUN cp -r webapps.dist/manager webapps/
 
