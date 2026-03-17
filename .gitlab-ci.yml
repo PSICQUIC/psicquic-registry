@@ -72,7 +72,7 @@ hh-test-deploy:
   variables:
     PROXY_HOST: hh-wwwcache.ebi.ac.uk
     NFS_SERVER: hh-isi-srv-vlan1496.ebi.ac.uk
-    NFS_PATH: /ifs/public/rw/intact/psicquic/registry
+    NFS_PATH: /ifs/public/rw/intact
     KUBE_CONTEXT: hh-intact-test
   environment:
     name: hh/test
@@ -85,7 +85,7 @@ hx-prod-deploy:
   variables:
     PROXY_HOST: hx-wwwcache.ebi.ac.uk
     NFS_SERVER: hx-isi-srv-vlan157.ebi.ac.uk
-    NFS_PATH: /ifs/public-r/rw/intact/psicquic/registry
+    NFS_PATH: /ifs/public-r/rw/intact
     KUBE_CONTEXT: hx-intact-prod
   environment:
     name: hx/prod
@@ -98,7 +98,7 @@ hh-prod-deploy:
   variables:
     PROXY_HOST: hh-wwwcache.ebi.ac.uk
     NFS_SERVER: hh-isi-srv-vlan1496.ebi.ac.uk
-    NFS_PATH: /ifs/public/rw/intact/psicquic/registry
+    NFS_PATH: /ifs/public/rw/intact
     KUBE_CONTEXT: hh-intact-prod
   environment:
     name: hh/prod
