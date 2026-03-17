@@ -72,12 +72,12 @@ hh-test-deploy:
   variables:
     PROXY_HOST: hh-wwwcache.ebi.ac.uk
     NFS_SERVER: hh-isi-srv-vlan1496.ebi.ac.uk
-    NFS_PATH: /ifs/public/rw/intact
+    NFS_PATH: /ifs/public/rw/intact/psicquic/registry
     KUBE_CONTEXT: hh-intact-test
   environment:
     name: hh/test
     deployment_tier: testing
-    url: http://hh-rke-wp-webadmin-99-master-1.caas.ebi.ac.uk:31239/psicquic/registry/registry?action=STATUS
+    url: http://hh-rke-wp-webadmin-99-master-1.caas.ebi.ac.uk:31903/psicquic/registry/registry?action=STATUS
 
 hx-prod-deploy:
   extends: .kubernetes-deploy
@@ -85,12 +85,12 @@ hx-prod-deploy:
   variables:
     PROXY_HOST: hx-wwwcache.ebi.ac.uk
     NFS_SERVER: hx-isi-srv-vlan157.ebi.ac.uk
-    NFS_PATH: /ifs/public-r/rw/intact
+    NFS_PATH: /ifs/public-r/rw/intact/psicquic/registry
     KUBE_CONTEXT: hx-intact-prod
   environment:
     name: hx/prod
     deployment_tier: production
-    url: http://hx-rke-wp-webadmin-78-master-1.caas.ebi.ac.uk:31239/psicquic/registry/registry?action=STATUS
+    url: http://hx-rke-wp-webadmin-78-master-1.caas.ebi.ac.uk:31903/psicquic/registry/registry?action=STATUS
 
 hh-prod-deploy:
   extends: .kubernetes-deploy
@@ -98,9 +98,9 @@ hh-prod-deploy:
   variables:
     PROXY_HOST: hh-wwwcache.ebi.ac.uk
     NFS_SERVER: hh-isi-srv-vlan1496.ebi.ac.uk
-    NFS_PATH: /ifs/public/rw/intact
+    NFS_PATH: /ifs/public/rw/intact/psicquic/registry
     KUBE_CONTEXT: hh-intact-prod
   environment:
     name: hh/prod
     deployment_tier: production
-    url: http://hh-rke-wp-webadmin-102-master-1.caas.ebi.ac.uk:31239/psicquic/registry/registry?action=STATUS
+    url: http://hh-rke-wp-webadmin-102-master-1.caas.ebi.ac.uk:31903/psicquic/registry/registry?action=STATUS
