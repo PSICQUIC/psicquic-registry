@@ -14,3 +14,6 @@ Then, browse to:
 ```
 http://localhost:9091/psicquic/registry/registry?action=STATUS
 ```
+
+## Update certificate
+TODO: add details here
