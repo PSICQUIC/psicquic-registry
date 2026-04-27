@@ -52,7 +52,7 @@ public class PsicquicRegistryStatusChecker {
 
     private Date lastRefreshed = new Date();
 
-    private int threadTimeOut = 5;
+    private final int threadTimeOut = 30;
 
     private List<Future> runningTasks;
 
