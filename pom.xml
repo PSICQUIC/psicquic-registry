@@ -18,7 +18,7 @@
 
     <properties>
         <cxf.version>3.2.14</cxf.version>
-        <spring.version>4.3.30.RELEASE</spring.version>
+        <spring.version>6.1.13</spring.version>
 
         <!-- configurable bits -->
 
