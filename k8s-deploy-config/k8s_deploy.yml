@@ -86,7 +86,12 @@ spec:
             - name: https_proxy
               value: "http://<PROXY_HOST>:3128"
             - name: JAVA_OPTS
-              value: "-Dhttp.proxyHost=<PROXY_HOST> -Dhttp.proxyPort=3128 -Dhttps.proxyHost=<PROXY_HOST> -Dhttps.proxyPort=3128"
+              value: >-
+                -Dhttp.proxyHost=<PROXY_HOST>
+                -Dhttp.proxyPort=3128
+                -Dhttps.proxyHost=<PROXY_HOST>
+                -Dhttps.proxyPort=3128
+                -Dcom.sun.security.enableAIAcaIssuers=true
       volumes:
         - name: nfs-rw-volume
           nfs:
