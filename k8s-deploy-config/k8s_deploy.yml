@@ -92,6 +92,7 @@ spec:
                 -Dhttps.proxyHost=<PROXY_HOST>
                 -Dhttps.proxyPort=3128
                 -Dcom.sun.security.enableAIAcaIssuers=true
+                -Dcom.sun.security.allowedAIALocations=any
       volumes:
         - name: nfs-rw-volume
           nfs:
